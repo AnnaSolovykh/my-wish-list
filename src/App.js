@@ -75,7 +75,7 @@ function App() {
         <h2> Any more ideas? Then here are some hints!</h2>
     </div>
 
-    <div className='photo-container'>
+    <div className='photo-container' key={id}>
       <button className='slider-btn' onClick={previousPhoto}>Previous</button>
       <img src={image} width="300px" height="500vh" alt='other options'/>
       <button className='slider-btn' onClick={nextPhoto}>Next</button>
