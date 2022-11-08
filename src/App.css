@@ -1,38 +1,143 @@
-.App {
-  text-align: center;
+body {
+  background-color: #CBA0AE;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.upper-container {
+  background-color: #80558C;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  color: #E4D192;
+  font-family: 'Satisfy', cursive;
+  font-size: 50px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  background-color: #E4D192;
+  height: 10vh;
+  display: flex;
+  justify-content: flex-start;
+}
+
+h2 {
+  color: #80558C;
+  font-family: 'Satisfy', cursive;
+  font-size: 30px;
+  margin-left: 20px;
+}
+
+.wishes-container {
+  display: flex;
+  margin: 30px;
+  
+}
+
+.present-info {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-left: 30px;
+  color: #f1f2db;;
+  font-size: 30px;
+  font-family: 'Architects Daughter', cursive;
+
 }
 
-.App-link {
-  color: #61dafb;
+a {
+  color: #E4D192;
+  font-size: 22px;
+  font-family: 'Satisfy', cursive;
+  text-decoration: none;
+  background-color: #f1f2db48;
+  border-radius: 5px;
+  padding: 5px 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.tips {
+  background-color: #e4d19200;
+  color: #80558C;
+  border: none;
+  font-size: 25px;
+  font-family: 'Satisfy', cursive;
+}
+
+h4{
+  font-size: 20px;
+  font-family: 'Satisfy', cursive;
+  color: #80558C;;
+}
+
+.btn {
+  padding: 5px 10px;
+  background-color: #E4D192;
+  color: #AF7AB3;
+  border: none;
+  font-size: 20px;
+  font-family: 'Architects Daughter', cursive;
+  margin-top: 30px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-remove-all {
+  padding: 10px 40px;
+  background-color: #E4D192;
+  color: #AF7AB3;
+  border: none;
+  font-size: 30px;
+  font-family: 'Architects Daughter', cursive;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.photo-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px ;
+  margin-bottom: 50px;
+}
+.slider-btn {
+  color: #E4D192;
+  font-family: 'Satisfy', cursive;
+  font-size: 50px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+
+@media all and (max-width: 500px) {
+  h1 {
+    font-size: 40px;
+    text-align: center;
+    padding: 5px;
   }
-  to {
-    transform: rotate(360deg);
-  }
+   h2 {
+    font-size: 28px;
+    padding: 3px;
+   }
+
+   .wishes-container, .photo-container {
+    flex-direction: column;
+    align-items: center;
+   }
+
+   .container  {
+    height: 20vh;
+   }
+
+   .upper-container {
+    height: 22vh;
+   }
 }
