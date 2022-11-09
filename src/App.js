@@ -6,6 +6,7 @@ import Presents from './Presents';
 function App() {
 
   return (
+    
   <div>
     <Presents/>
     <Slider />
